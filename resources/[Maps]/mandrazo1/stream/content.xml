@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CDataFileMgr__ContentsOfDataFileXml>
+  <disabledFiles />
+  <includedXmlFiles />
+  <includedDataFiles />
+  <dataFiles>
+  <Item>
+      <filename>dlc_mandrazo1:/%PLATFORM%/levels/gta5/models.rpf</filename>
+      <fileType>RPF_FILE</fileType>
+			<overlay value="true"/>
+			<disabled value="true"/>
+	    <persistent value="true"/>	    
+  </Item>	
+	<Item>
+	<filename>dlc_mandrazo1:/%PLATFORM%/levels/gta5/models.rpf/v_int_56.ytyp</filename>
+	<fileType>DLC_YTYP_REQUEST</fileType>
+	<overlay value="false" />
+	<disabled value="false" />
+	<persistent value="false" />
+	<contents>CONTENTS_PROPS</contents>
+	</Item>
+  </dataFiles>
+  <contentChangeSets>
+  	<Item>
+	    <changeSetName>mandrazo1_NG_STREAMING_MAP</changeSetName>
+	    <filesToEnable>
+        <Item>dlc_mandrazo1:/%PLATFORM%/levels/gta5/models.rpf</Item>
+				<Item>dlc_mandrazo1:/%PLATFORM%/levels/gta5/models.rpf/v_int_56.ytyp</Item>
+	      </filesToEnable>
+	    <executionConditions>
+	      <activeChangesetConditions>
+		    </activeChangesetConditions>
+		    <genericConditions>$level=MO_JIM_L11</genericConditions>
+	    </executionConditions>
+	  </Item>
+  </contentChangeSets>
+  <patchFiles />
+</CDataFileMgr__ContentsOfDataFileXml>
