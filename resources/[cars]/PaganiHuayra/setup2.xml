@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SSetupData>
+  <deviceName>dlc_rmodpagani</deviceName>
+  <datFile>content.xml</datFile>
+  <timeStamp>01/07/2017 00:00:00</timeStamp>
+  <nameHash>rmodpagani</nameHash>
+  <contentChangeSetGroups>
+    <Item>
+      <NameHash>GROUP_STARTUP</NameHash>
+      <ContentChangeSets>
+        <Item>RMODPAGANI_AUTOGEN</Item>
+		<Item platform="ps4|xboxone">RMODPAGANI_PLATFORM_SPECS</Item>
+        <Item>RMODPAGANI_UNLOCKS_AUTOGEN</Item>
+    <Item>
+      <NameHash>GROUP_ON_DEMAND</NameHash>
+      <ContentChangeSets>
+        <Item>RMODPAGANI_ANIM_OVERLAYS</Item>
+      </ContentChangeSets>
+    </Item>	
+      </ContentChangeSets>
+    </Item>
+  </contentChangeSetGroups>
+  <type>EXTRACONTENT_COMPAT_PACK</type>
+  <order value="13" />  
+</SSetupData>
