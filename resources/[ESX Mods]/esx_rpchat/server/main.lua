@@ -1,87 +1,108 @@
---AddEventHandler('es:invalidCommandHandler', function(source, command_args, user)
---	CancelEvent()
---	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', _U('ooc_unknown_command', command_args[1]) } })
---end)
+--[[
 
-RegisterCommand('ooc', function(source, args, rawCommand)
-	if source == 0 then
-		print('esx_rpchat: you can\'t use this command from rcon!')
-		return
-	end
+  ESX RP Chat
 
-	rawCommand = string.sub(rawCommand, 4)
-	local name = GetPlayerName(source)
-	if Config.EnableESXIdentity then name = GetCharacterName(source) end
+--]]
 
-	TriggerClientEvent('chat:addMessage', -1, { args = { _U('ooc_prefix', name), rawCommand }, color = { 128, 128, 128 } })
-end, false)
+function getIdentity(source)
+	local identifier = GetPlayerIdentifiers(source)[1]
+	local result = MySQL.Sync.fetchAll("SELECT * FROM users WHERE identifier = @identifier", {['@identifier'] = identifier})
+	if result[1] ~= nil then
+		local identity = result[1]
 
-RegisterCommand('twt', function(source, args, rawCommand)
-	if source == 0 then
-		print('esx_rpchat: you can\'t use this command from rcon!')
-		return
-	end
-
-	rawCommand = string.sub(rawCommand, 4)
-	local name = GetPlayerName(source)
-	if Config.EnableESXIdentity then name = GetCharacterName(source) end
-
-	TriggerClientEvent('chat:addMessage', -1, { args = { _U('twt_prefix', name), rawCommand }, color = { 0, 153, 204 } })
-end, false)
-
-RegisterCommand('me', function(source, args, rawCommand)
-	if source == 0 then
-		print('esx_rpchat: you can\'t use this command from rcon!')
-		return
-	end
-
-	rawCommand = string.sub(rawCommand, 3)
-	local name = GetPlayerName(source)
-	if Config.EnableESXIdentity then name = GetCharacterName(source) end
-
-	TriggerClientEvent('esx_rpchat:sendProximityMessage', -1, source, _U('me_prefix', name), rawCommand, { 255, 0, 0 })
-end, false)
-
-RegisterCommand('do', function(source, args, rawCommand)
-	if source == 0 then
-		print('esx_rpchat: you can\'t use this command from rcon!')
-		return
-	end
-
-	rawCommand = string.sub(rawCommand, 3)
-	local name = GetPlayerName(source)
-	if Config.EnableESXIdentity then name = GetCharacterName(source) end
-
-	TriggerClientEvent('esx_rpchat:sendProximityMessage', -1, source, _U('do_prefix', name), rawCommand, { 0, 0, 255 })
-end, false)
-
-RegisterCommand('news', function(source, args, rawCommand)
-	if source == 0 then
-		print('esx_rpchat: you can\'t use this command from rcon!')
-		return
-	end
-
-	rawCommand = string.sub(rawCommand, 5)
-	local name = GetPlayerName(source)
-	if Config.EnableESXIdentity then name = GetCharacterName(source) end
-
-	TriggerClientEvent('chat:addMessage', -1, { args = { _U('news_prefix', name), rawCommand }, color = { 249, 166, 0 } })
-end, false)
-
-function GetCharacterName(source)
-	-- fetch identity in sync
-	local result = MySQL.Sync.fetchAll('SELECT firstname, lastname FROM users WHERE identifier = @identifier',
-	{
-		['@identifier'] = GetPlayerIdentifiers(source)[1]
-	})
-
-	if result[1] and result[1].firstname and result[1].lastname then
-		if Config.OnlyFirstname then
-			return result[1].firstname
-		else
-			return result[1].firstname .. ' ' .. result[1].lastname
-		end
+		return {
+			identifier = identity['identifier'],
+			firstname = identity['firstname'],
+			lastname = identity['lastname'],
+			dateofbirth = identity['dateofbirth'],
+			sex = identity['sex'],
+			height = identity['height']
+			
+		}
 	else
-		return GetPlayerName(source)
+		return nil
 	end
+end
+
+ AddEventHandler('chatMessage', function(source, name, message)
+      if string.sub(message, 1, string.len("/")) ~= "/" then
+          local name = getIdentity(source)
+		TriggerClientEvent("sendProximityMessageMe", -1, source, name.firstname, message)
+      end
+      CancelEvent()
+  end)
+  
+  -- TriggerEvent('es:addCommand', 'me', function(source, args, user)
+  --    local name = getIdentity(source)
+  --    TriggerClientEvent("sendProximityMessageMe", -1, source, name.firstname, table.concat(args, " "))
+  -- end) 
+
+
+
+  --- TriggerEvent('es:addCommand', 'me', function(source, args, user)
+  ---    local name = getIdentity(source)
+  ---    TriggerClientEvent("sendProximityMessageMe", -1, source, name.firstname, table.concat(args, " "))
+  -- end) 
+  TriggerEvent('es:addCommand', 'me', function(source, args, user)
+    local name = getIdentity(source)
+    table.remove(args, 2)
+    TriggerClientEvent('esx-qalle-chat:me', -1, source, name.firstname, table.concat(args, " "))
+end)
+
+
+ RegisterCommand('twt', function(source, args, rawCommand)
+    local playerName = GetPlayerName(source)
+    local msg = rawCommand:sub(4)
+    local name = getIdentity(source)
+    fal = name.firstname .. " " .. name.lastname
+    TriggerClientEvent('chat:addMessage', -1, {
+        template = '<div style="padding: 0.5vw; margin: 0.5vw; background-color: rgba(28, 160, 242, 0.6); border-radius: 3px;"><i class="fab fa-twitter"></i> @{0}:<br> {1}</div>',
+        args = { fal, msg }
+    })
+end, false)
+
+ RegisterCommand('anontwt', function(source, args, rawCommand)
+    local playerName = GetPlayerName(source)
+    local msg = rawCommand:sub(9)
+    local name = getIdentity(source)
+    fal = name.firstname .. " " .. name.lastname
+    TriggerClientEvent('chat:addMessage', -1, {
+        template = '<div style="padding: 0.5vw; margin: 0.5vw; background-color: rgba(28, 160, 242, 0.6); border-radius: 3px;"><i class="fab fa-twitter"></i> @Anonymous:<br> {1}</div>',
+        args = { fal, msg }
+    })
+end, false)
+
+ RegisterCommand('ad', function(source, args, rawCommand)
+    local playerName = GetPlayerName(source)
+    local msg = rawCommand:sub(4)
+    local name = getIdentity(source)
+    fal = name.firstname .. " " .. name.lastname
+    TriggerClientEvent('chat:addMessage', -1, {
+        template = '<div style="padding: 0.5vw; margin: 0.5vw; background-color: rgba(214, 168, 0, 1); border-radius: 3px;"><i class="fas fa-ad"></i> Advertisement:<br> {1}<br></div>',
+        args = { fal, msg }
+    })
+end, false)
+
+        RegisterCommand('ooc', function(source, args, rawCommand)
+    local playerName = GetPlayerName(source)
+    local msg = rawCommand:sub(5)
+    local name = getIdentity(source)
+
+    TriggerClientEvent('chat:addMessage', -1, {
+        template = '<div style="padding: 0.5vw; margin: 0.5vw; background-color: rgba(41, 41, 41, 0.6); border-radius: 3px;"><i class="fas fa-globe"></i> {0}:<br> {1}</div>',
+        args = { playerName, msg }
+    })
+end, false)
+
+
+function stringsplit(inputstr, sep)
+	if sep == nil then
+		sep = "%s"
+	end
+	local t={} ; i=1
+	for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
+		t[i] = str
+		i = i + 1
+	end
+	return t
 end

@@ -36,7 +36,7 @@ Config.PoliceStations = {
 		},
 
 		Armories = {
-			vector3(451.7, -980.1, 30.6)
+			vector3(460.63, -980.98, 29.69)
 		},
 
 		Vehicles = {
@@ -92,88 +92,226 @@ Config.AuthorizedWeapons = {
 		{ weapon = 'WEAPON_ADVANCEDRIFLE', components = { 0, 6000, 1000, 4000, 8000, nil }, price = 50000 },
 		{ weapon = 'WEAPON_NIGHTSTICK', price = 0 },
 		{ weapon = 'WEAPON_STUNGUN', price = 500 },
-		{ weapon = 'WEAPON_FLASHLIGHT', price = 0 }
+		{ weapon = 'WEAPON_FLASHLIGHT', price = 0 },
+		{ weapon = 'WEAPON_PISTOL_MK2', price = 300 },
+		{ weapon = 'WEAPON_SMG', price = 600 },
+		{ weapon = 'WEAPON_SPECIALCARBINE', price = 1250 },
+		{ weapon = 'WEAPON_SPECIALCARBINE_MK2', price = 2500 },
+		{ weapon = 'WEAPON_BULLPUPRIFLE_MK2', price = 2500 },
+		{ weapon = 'WEAPON_PUMPSHOTGUN_MK2', price = 1800 },
+		{ weapon = 'WEAPON_MARKSMANRIFLE_MK2', price = 13000 },
+		{ weapon = 'WEAPON_SMG_MK2', price = 6000 },
+		{ weapon = 'WEAPON_CARBINERIFLE', price = 1000 },
+		{ weapon = 'WEAPON_HEAVYSNIPER', price = 40000 },
+		{ weapon = 'WEAPON_PUMPSHOTGUN', price = 400 },
+		{ weapon = 'WEAPON_SWITCHBLADE', price = 300 },
+		{ weapon = 'WEAPON_MACHETE', price = 300 },
+		{ weapon = 'WEAPON_FLAREGUN', price = 300 },
+		{ weapon = 'WEAPON_BZGAS', price = 300 },
+		{ weapon = 'WEAPON_FIREEXTINGUISHER', price = 300 },
+		{ weapon = 'WEAPON_FLARE', price = 500 }
 	},
 
 	sergeant = {
 		{ weapon = 'WEAPON_APPISTOL', components = { 0, 0, 1000, 4000, nil }, price = 10000 },
 		{ weapon = 'WEAPON_ADVANCEDRIFLE', components = { 0, 6000, 1000, 4000, 8000, nil }, price = 50000 },
-		{ weapon = 'WEAPON_PUMPSHOTGUN', components = { 2000, 6000, nil }, price = 70000 },
 		{ weapon = 'WEAPON_NIGHTSTICK', price = 0 },
 		{ weapon = 'WEAPON_STUNGUN', price = 500 },
-		{ weapon = 'WEAPON_FLASHLIGHT', price = 0 }
+		{ weapon = 'WEAPON_FLASHLIGHT', price = 0 },
+		{ weapon = 'WEAPON_PISTOL_MK2', price = 300 },
+		{ weapon = 'WEAPON_SMG', price = 600 },
+		{ weapon = 'WEAPON_SPECIALCARBINE', price = 1250 },
+		{ weapon = 'WEAPON_SPECIALCARBINE_MK2', price = 2500 },
+		{ weapon = 'WEAPON_BULLPUPRIFLE_MK2', price = 2500 },
+		{ weapon = 'WEAPON_PUMPSHOTGUN_MK2', price = 1800 },
+		{ weapon = 'WEAPON_MARKSMANRIFLE_MK2', price = 13000 },
+		{ weapon = 'WEAPON_SMG_MK2', price = 6000 },
+		{ weapon = 'WEAPON_CARBINERIFLE', price = 1000 },
+		{ weapon = 'WEAPON_HEAVYSNIPER', price = 40000 },
+		{ weapon = 'WEAPON_PUMPSHOTGUN', price = 400 },
+		{ weapon = 'WEAPON_SWITCHBLADE', price = 300 },
+		{ weapon = 'WEAPON_MACHETE', price = 300 },
+		{ weapon = 'WEAPON_FLAREGUN', price = 300 },
+		{ weapon = 'WEAPON_BZGAS', price = 300 },
+		{ weapon = 'WEAPON_FIREEXTINGUISHER', price = 300 },
+		{ weapon = 'WEAPON_FLARE', price = 500 }
 	},
 
 	intendent = {
 		{ weapon = 'WEAPON_APPISTOL', components = { 0, 0, 1000, 4000, nil }, price = 10000 },
 		{ weapon = 'WEAPON_ADVANCEDRIFLE', components = { 0, 6000, 1000, 4000, 8000, nil }, price = 50000 },
-		{ weapon = 'WEAPON_PUMPSHOTGUN', components = { 2000, 6000, nil }, price = 70000 },
 		{ weapon = 'WEAPON_NIGHTSTICK', price = 0 },
 		{ weapon = 'WEAPON_STUNGUN', price = 500 },
-		{ weapon = 'WEAPON_FLASHLIGHT', price = 0 }
+		{ weapon = 'WEAPON_FLASHLIGHT', price = 0 },
+		{ weapon = 'WEAPON_PISTOL_MK2', price = 300 },
+		{ weapon = 'WEAPON_SMG', price = 600 },
+		{ weapon = 'WEAPON_SPECIALCARBINE', price = 1250 },
+		{ weapon = 'WEAPON_SPECIALCARBINE_MK2', price = 2500 },
+		{ weapon = 'WEAPON_BULLPUPRIFLE_MK2', price = 2500 },
+		{ weapon = 'WEAPON_PUMPSHOTGUN_MK2', price = 1800 },
+		{ weapon = 'WEAPON_MARKSMANRIFLE_MK2', price = 13000 },
+		{ weapon = 'WEAPON_SMG_MK2', price = 6000 },
+		{ weapon = 'WEAPON_CARBINERIFLE', price = 1000 },
+		{ weapon = 'WEAPON_HEAVYSNIPER', price = 40000 },
+		{ weapon = 'WEAPON_PUMPSHOTGUN', price = 400 },
+		{ weapon = 'WEAPON_SWITCHBLADE', price = 300 },
+		{ weapon = 'WEAPON_MACHETE', price = 300 },
+		{ weapon = 'WEAPON_FLAREGUN', price = 300 },
+		{ weapon = 'WEAPON_BZGAS', price = 300 },
+		{ weapon = 'WEAPON_FIREEXTINGUISHER', price = 300 },
+		{ weapon = 'WEAPON_FLARE', price = 500 }
 	},
 
 	lieutenant = {
 		{ weapon = 'WEAPON_APPISTOL', components = { 0, 0, 1000, 4000, nil }, price = 10000 },
 		{ weapon = 'WEAPON_ADVANCEDRIFLE', components = { 0, 6000, 1000, 4000, 8000, nil }, price = 50000 },
-		{ weapon = 'WEAPON_PUMPSHOTGUN', components = { 2000, 6000, nil }, price = 70000 },
 		{ weapon = 'WEAPON_NIGHTSTICK', price = 0 },
 		{ weapon = 'WEAPON_STUNGUN', price = 500 },
-		{ weapon = 'WEAPON_FLASHLIGHT', price = 0 }
+		{ weapon = 'WEAPON_FLASHLIGHT', price = 0 },
+		{ weapon = 'WEAPON_PISTOL_MK2', price = 300 },
+		{ weapon = 'WEAPON_SMG', price = 600 },
+		{ weapon = 'WEAPON_SPECIALCARBINE', price = 1250 },
+		{ weapon = 'WEAPON_SPECIALCARBINE_MK2', price = 2500 },
+		{ weapon = 'WEAPON_BULLPUPRIFLE_MK2', price = 2500 },
+		{ weapon = 'WEAPON_PUMPSHOTGUN_MK2', price = 1800 },
+		{ weapon = 'WEAPON_MARKSMANRIFLE_MK2', price = 13000 },
+		{ weapon = 'WEAPON_SMG_MK2', price = 6000 },
+		{ weapon = 'WEAPON_CARBINERIFLE', price = 1000 },
+		{ weapon = 'WEAPON_HEAVYSNIPER', price = 40000 },
+		{ weapon = 'WEAPON_PUMPSHOTGUN', price = 400 },
+		{ weapon = 'WEAPON_SWITCHBLADE', price = 300 },
+		{ weapon = 'WEAPON_MACHETE', price = 300 },
+		{ weapon = 'WEAPON_FLAREGUN', price = 300 },
+		{ weapon = 'WEAPON_BZGAS', price = 300 },
+		{ weapon = 'WEAPON_FIREEXTINGUISHER', price = 300 },
+		{ weapon = 'WEAPON_FLARE', price = 500 }
 	},
 
 	chef = {
 		{ weapon = 'WEAPON_APPISTOL', components = { 0, 0, 1000, 4000, nil }, price = 10000 },
 		{ weapon = 'WEAPON_ADVANCEDRIFLE', components = { 0, 6000, 1000, 4000, 8000, nil }, price = 50000 },
-		{ weapon = 'WEAPON_PUMPSHOTGUN', components = { 2000, 6000, nil }, price = 70000 },
 		{ weapon = 'WEAPON_NIGHTSTICK', price = 0 },
 		{ weapon = 'WEAPON_STUNGUN', price = 500 },
-		{ weapon = 'WEAPON_FLASHLIGHT', price = 0 }
+		{ weapon = 'WEAPON_FLASHLIGHT', price = 0 },
+		{ weapon = 'WEAPON_PISTOL_MK2', price = 300 },
+		{ weapon = 'WEAPON_SMG', price = 600 },
+		{ weapon = 'WEAPON_SPECIALCARBINE', price = 1250 },
+		{ weapon = 'WEAPON_SPECIALCARBINE_MK2', price = 2500 },
+		{ weapon = 'WEAPON_BULLPUPRIFLE_MK2', price = 2500 },
+		{ weapon = 'WEAPON_PUMPSHOTGUN_MK2', price = 1800 },
+		{ weapon = 'WEAPON_MARKSMANRIFLE_MK2', price = 13000 },
+		{ weapon = 'WEAPON_SMG_MK2', price = 6000 },
+		{ weapon = 'WEAPON_CARBINERIFLE', price = 1000 },
+		{ weapon = 'WEAPON_HEAVYSNIPER', price = 40000 },
+		{ weapon = 'WEAPON_PUMPSHOTGUN', price = 400 },
+		{ weapon = 'WEAPON_SWITCHBLADE', price = 300 },
+		{ weapon = 'WEAPON_MACHETE', price = 300 },
+		{ weapon = 'WEAPON_FLAREGUN', price = 300 },
+		{ weapon = 'WEAPON_BZGAS', price = 300 },
+		{ weapon = 'WEAPON_FIREEXTINGUISHER', price = 300 },
+		{ weapon = 'WEAPON_FLARE', price = 500 }
 	},
 
 	boss = {
 		{ weapon = 'WEAPON_APPISTOL', components = { 0, 0, 1000, 4000, nil }, price = 10000 },
 		{ weapon = 'WEAPON_ADVANCEDRIFLE', components = { 0, 6000, 1000, 4000, 8000, nil }, price = 50000 },
-		{ weapon = 'WEAPON_PUMPSHOTGUN', components = { 2000, 6000, nil }, price = 70000 },
 		{ weapon = 'WEAPON_NIGHTSTICK', price = 0 },
 		{ weapon = 'WEAPON_STUNGUN', price = 500 },
-		{ weapon = 'WEAPON_FLASHLIGHT', price = 0 }
+		{ weapon = 'WEAPON_FLASHLIGHT', price = 0 },
+		{ weapon = 'WEAPON_PISTOL_MK2', price = 300 },
+		{ weapon = 'WEAPON_SMG', price = 600 },
+		{ weapon = 'WEAPON_SPECIALCARBINE', price = 1250 },
+		{ weapon = 'WEAPON_SPECIALCARBINE_MK2', price = 2500 },
+		{ weapon = 'WEAPON_BULLPUPRIFLE_MK2', price = 2500 },
+		{ weapon = 'WEAPON_PUMPSHOTGUN_MK2', price = 1800 },
+		{ weapon = 'WEAPON_MARKSMANRIFLE_MK2', price = 13000 },
+		{ weapon = 'WEAPON_SMG_MK2', price = 6000 },
+		{ weapon = 'WEAPON_CARBINERIFLE', price = 1000 },
+		{ weapon = 'WEAPON_HEAVYSNIPER', price = 40000 },
+		{ weapon = 'WEAPON_PUMPSHOTGUN', price = 400 },
+		{ weapon = 'WEAPON_SWITCHBLADE', price = 300 },
+		{ weapon = 'WEAPON_MACHETE', price = 300 },
+		{ weapon = 'WEAPON_FLAREGUN', price = 300 },
+		{ weapon = 'WEAPON_BZGAS', price = 300 },
+		{ weapon = 'WEAPON_FIREEXTINGUISHER', price = 300 },
+		{ weapon = 'WEAPON_FLARE', price = 500 }
 	}
 }
 
 Config.AuthorizedVehicles = {
 	Shared = {
-		{ model = 'police', label = 'Police Cruiser', price = 10000 },
 		{ model = 'pbus', label = 'Police Prison Bus', price = 5000 }
 	},
 
 	recruit = {
+		{ model = 'police4', label = 'Ford Taurus RB', price = 10000 }
 
 	},
 
 	officer = {
-		{ model = 'police3', label = 'Police Interceptor', price = 20000 }
+		{ model = 'police2', label = 'State Police Charger', price = 20000 },
+		{ model = 'police4', label = 'Ford Taurus RB', price = 10000 },
+		{ model = 'police5', label = 'Ford Explorer', price = 25000 }
 	},
 
 	sergeant = {
-		{ model = 'policet', label = 'Police Transporter', price = 18500 },
-		{ model = 'policeb', label = 'Police Bike', price = 30500 }
+		{ model = 'police2', label = 'State Police Charger', price = 20000 },
+		{ model = 'police4', label = 'Ford Taurus RB', price = 10000 },
+		{ model = 'police5', label = 'Ford Explorer', price = 25000 },
+		{ model = 'policeb', label = 'Police Bike', price = 30500 },
+		{ model = 'police6', label = 'Chevrolet Suburban RB', price = 30500 }
 	},
 
 	intendent = {
+		{ model = 'police2', label = 'State Police Charger', price = 20000 },
+		{ model = 'police4', label = 'Ford Taurus RB', price = 10000 },
+		{ model = 'police5', label = 'Ford Explorer', price = 25000 },
+		{ model = 'policeb', label = 'Police Bike', price = 30500 },
+		{ model = 'police6', label = 'Chevrolet Suburban RB', price = 30500 }
 
 	},
 
 	lieutenant = {
-		{ model = 'riot', label = 'Police Riot', price = 70000 },
-		{ model = 'fbi2', label = 'FIB SUV', price = 60000 }
+		{ model = 'police2', label = 'State Police Charger', price = 20000 },
+		{ model = 'police4', label = 'Ford Taurus RB', price = 10000 },
+		{ model = 'police5', label = 'Ford Explorer', price = 25000 },
+		{ model = 'policeb', label = 'Police Bike', price = 30500 },
+		{ model = 'police6', label = 'Chevrolet Suburban RB', price = 30500 },
+		{ model = 'polf430', label = 'Ferrari F430', price = 30500 },
+		{ model = 'pol718', label = 'Police 718', price = 30500 },
+		{ model = 'pranger', label = 'FordF350', price = 30500 },
+		{ model = 'fbi', label = 'Unmarked GTR', price = 30500 }
 	},
 
 	chef = {
+		{ model = 'police2', label = 'State Police Charger', price = 20000 },
+		{ model = 'police4', label = 'Ford Taurus RB', price = 10000 },
+		{ model = 'police5', label = 'Ford Explorer', price = 25000 },
+		{ model = 'policeb', label = 'Police Bike', price = 30500 },
+		{ model = 'police6', label = 'Chevrolet Suburban RB', price = 30500 },
+		{ model = 'polf430', label = 'Ferrari F430', price = 30500 },
+		{ model = 'pol718', label = 'Police 718', price = 30500 },
+		{ model = 'pranger', label = 'FordF350', price = 30500 },
+		{ model = 'fbi', label = 'Unmarked GTR', price = 30500 },
+		{ model = 'polaventa', label = 'Aventador', price = 30500 },
+		{ model = 'polchiron', label = 'Bugatti Chiron', price = 30500 },
+		{ model = '2015polstang', label = 'Ford Mustang', price = 30500 }
 
 	},
 
 	boss = {
+		{ model = 'police2', label = 'State Police Charger', price = 20000 },
+		{ model = 'police4', label = 'Ford Taurus RB', price = 10000 },
+		{ model = 'police5', label = 'Ford Explorer', price = 25000 },
+		{ model = 'policeb', label = 'Police Bike', price = 30500 },
+		{ model = 'police6', label = 'Chevrolet Suburban RB', price = 30500 },
+		{ model = 'polf430', label = 'Ferrari F430', price = 30500 },
+		{ model = 'pol718', label = 'Police 718', price = 30500 },
+		{ model = 'pranger', label = 'FordF350', price = 30500 },
+		{ model = 'fbi', label = 'Unmarked GTR', price = 30500 },
+		{ model = 'polaventa', label = 'Aventador', price = 30500 },
+		{ model = 'polchiron', label = 'Bugatti Chiron', price = 30500 },
+		{ model = '2015polstang', label = 'Ford Mustang', price = 30500 }
 
 	}
 }
@@ -205,169 +343,163 @@ Config.AuthorizedHelicopters = {
 Config.Uniforms = {
 	recruit_wear = {
 		male = {
-			['tshirt_1'] = 59,  ['tshirt_2'] = 1,
+			['tshirt_1'] = 130,  ['tshirt_2'] = 0,
 			['torso_1'] = 55,   ['torso_2'] = 0,
 			['decals_1'] = 0,   ['decals_2'] = 0,
 			['arms'] = 41,
-			['pants_1'] = 25,   ['pants_2'] = 0,
-			['shoes_1'] = 25,   ['shoes_2'] = 0,
-			['helmet_1'] = 46,  ['helmet_2'] = 0,
-			['chain_1'] = 0,    ['chain_2'] = 0,
+			['pants_1'] = 31,   ['pants_2'] = 0,
+			['shoes_1'] = 26,   ['shoes_2'] = 0,
+			['helmet_1'] = 0,  ['helmet_2'] = 0,
+			['chain_1'] = 125,    ['chain_2'] = 0,
 			['ears_1'] = 2,     ['ears_2'] = 0
 		},
 		female = {
-			['tshirt_1'] = 36,  ['tshirt_2'] = 1,
+			['tshirt_1'] = 152,  ['tshirt_2'] = 0,
 			['torso_1'] = 48,   ['torso_2'] = 0,
 			['decals_1'] = 0,   ['decals_2'] = 0,
 			['arms'] = 44,
-			['pants_1'] = 34,   ['pants_2'] = 0,
-			['shoes_1'] = 27,   ['shoes_2'] = 0,
+			['pants_1'] = 30,   ['pants_2'] = 0,
+			['shoes_1'] = 24,   ['shoes_2'] = 0,
 			['helmet_1'] = 45,  ['helmet_2'] = 0,
-			['chain_1'] = 0,    ['chain_2'] = 0,
+			['chain_1'] = 95,    ['chain_2'] = 0,
 			['ears_1'] = 2,     ['ears_2'] = 0
 		}
 	},
 	officer_wear = {
 		male = {
-			['tshirt_1'] = 58,  ['tshirt_2'] = 0,
+			['tshirt_1'] = 130,  ['tshirt_2'] = 0,
 			['torso_1'] = 55,   ['torso_2'] = 0,
 			['decals_1'] = 0,   ['decals_2'] = 0,
 			['arms'] = 41,
-			['pants_1'] = 25,   ['pants_2'] = 0,
+			['pants_1'] = 31,   ['pants_2'] = 0,
 			['shoes_1'] = 25,   ['shoes_2'] = 0,
-			['helmet_1'] = -1,  ['helmet_2'] = 0,
-			['chain_1'] = 0,    ['chain_2'] = 0,
+			['chain_1'] = 125,    ['chain_2'] = 0,
 			['ears_1'] = 2,     ['ears_2'] = 0
 		},
 		female = {
-			['tshirt_1'] = 35,  ['tshirt_2'] = 0,
+			['tshirt_1'] = 152,  ['tshirt_2'] = 0,
 			['torso_1'] = 48,   ['torso_2'] = 0,
 			['decals_1'] = 0,   ['decals_2'] = 0,
 			['arms'] = 44,
-			['pants_1'] = 34,   ['pants_2'] = 0,
-			['shoes_1'] = 27,   ['shoes_2'] = 0,
-			['helmet_1'] = -1,  ['helmet_2'] = 0,
-			['chain_1'] = 0,    ['chain_2'] = 0,
+			['pants_1'] = 30,   ['pants_2'] = 0,
+			['shoes_1'] = 24,   ['shoes_2'] = 0,
+			['helmet_1'] = 45,  ['helmet_2'] = 0,
+			['chain_1'] = 95,    ['chain_2'] = 0,
 			['ears_1'] = 2,     ['ears_2'] = 0
 		}
 	},
 	sergeant_wear = {
 		male = {
-			['tshirt_1'] = 58,  ['tshirt_2'] = 0,
+			['tshirt_1'] = 130,  ['tshirt_2'] = 0,
 			['torso_1'] = 55,   ['torso_2'] = 0,
-			['decals_1'] = 8,   ['decals_2'] = 1,
+			['decals_1'] = 0,   ['decals_2'] = 0,
 			['arms'] = 41,
-			['pants_1'] = 25,   ['pants_2'] = 0,
+			['pants_1'] = 31,   ['pants_2'] = 0,
 			['shoes_1'] = 25,   ['shoes_2'] = 0,
-			['helmet_1'] = -1,  ['helmet_2'] = 0,
-			['chain_1'] = 0,    ['chain_2'] = 0,
+			['chain_1'] = 125,    ['chain_2'] = 0,
 			['ears_1'] = 2,     ['ears_2'] = 0
 		},
 		female = {
-			['tshirt_1'] = 35,  ['tshirt_2'] = 0,
+			['tshirt_1'] = 152,  ['tshirt_2'] = 0,
 			['torso_1'] = 48,   ['torso_2'] = 0,
-			['decals_1'] = 7,   ['decals_2'] = 1,
+			['decals_1'] = 0,   ['decals_2'] = 0,
 			['arms'] = 44,
-			['pants_1'] = 34,   ['pants_2'] = 0,
-			['shoes_1'] = 27,   ['shoes_2'] = 0,
-			['helmet_1'] = -1,  ['helmet_2'] = 0,
-			['chain_1'] = 0,    ['chain_2'] = 0,
+			['pants_1'] = 30,   ['pants_2'] = 0,
+			['shoes_1'] = 24,   ['shoes_2'] = 0,
+			['helmet_1'] = 45,  ['helmet_2'] = 0,
+			['chain_1'] = 95,    ['chain_2'] = 0,
 			['ears_1'] = 2,     ['ears_2'] = 0
 		}
 	},
 	intendent_wear = {
 		male = {
-			['tshirt_1'] = 58,  ['tshirt_2'] = 0,
+			['tshirt_1'] = 130,  ['tshirt_2'] = 0,
 			['torso_1'] = 55,   ['torso_2'] = 0,
-			['decals_1'] = 8,   ['decals_2'] = 2,
+			['decals_1'] = 0,   ['decals_2'] = 0,
 			['arms'] = 41,
-			['pants_1'] = 25,   ['pants_2'] = 0,
+			['pants_1'] = 31,   ['pants_2'] = 0,
 			['shoes_1'] = 25,   ['shoes_2'] = 0,
-			['helmet_1'] = -1,  ['helmet_2'] = 0,
-			['chain_1'] = 0,    ['chain_2'] = 0,
+			['chain_1'] = 125,    ['chain_2'] = 0,
 			['ears_1'] = 2,     ['ears_2'] = 0
 		},
 		female = {
-			['tshirt_1'] = 35,  ['tshirt_2'] = 0,
+			['tshirt_1'] = 152,  ['tshirt_2'] = 0,
 			['torso_1'] = 48,   ['torso_2'] = 0,
-			['decals_1'] = 7,   ['decals_2'] = 2,
+			['decals_1'] = 0,   ['decals_2'] = 0,
 			['arms'] = 44,
-			['pants_1'] = 34,   ['pants_2'] = 0,
-			['shoes_1'] = 27,   ['shoes_2'] = 0,
-			['helmet_1'] = -1,  ['helmet_2'] = 0,
-			['chain_1'] = 0,    ['chain_2'] = 0,
+			['pants_1'] = 30,   ['pants_2'] = 0,
+			['shoes_1'] = 24,   ['shoes_2'] = 0,
+			['helmet_1'] = 45,  ['helmet_2'] = 0,
+			['chain_1'] = 95,    ['chain_2'] = 0,
 			['ears_1'] = 2,     ['ears_2'] = 0
 		}
 	},
 	lieutenant_wear = { -- currently the same as intendent_wear
 		male = {
-			['tshirt_1'] = 58,  ['tshirt_2'] = 0,
+			['tshirt_1'] = 130,  ['tshirt_2'] = 0,
 			['torso_1'] = 55,   ['torso_2'] = 0,
-			['decals_1'] = 8,   ['decals_2'] = 2,
+			['decals_1'] = 8,   ['decals_2'] = 3,
 			['arms'] = 41,
-			['pants_1'] = 25,   ['pants_2'] = 0,
+			['pants_1'] = 31,   ['pants_2'] = 0,
 			['shoes_1'] = 25,   ['shoes_2'] = 0,
-			['helmet_1'] = -1,  ['helmet_2'] = 0,
-			['chain_1'] = 0,    ['chain_2'] = 0,
+			['chain_1'] = 125,    ['chain_2'] = 0,
 			['ears_1'] = 2,     ['ears_2'] = 0
 		},
 		female = {
-			['tshirt_1'] = 35,  ['tshirt_2'] = 0,
+			['tshirt_1'] = 152,  ['tshirt_2'] = 0,
 			['torso_1'] = 48,   ['torso_2'] = 0,
-			['decals_1'] = 7,   ['decals_2'] = 2,
+			['decals_1'] = 0,   ['decals_2'] = 0,
 			['arms'] = 44,
-			['pants_1'] = 34,   ['pants_2'] = 0,
-			['shoes_1'] = 27,   ['shoes_2'] = 0,
-			['helmet_1'] = -1,  ['helmet_2'] = 0,
-			['chain_1'] = 0,    ['chain_2'] = 0,
+			['pants_1'] = 30,   ['pants_2'] = 0,
+			['shoes_1'] = 24,   ['shoes_2'] = 0,
+			['helmet_1'] = 45,  ['helmet_2'] = 0,
+			['chain_1'] = 95,    ['chain_2'] = 0,
 			['ears_1'] = 2,     ['ears_2'] = 0
 		}
 	},
 	chef_wear = {
 		male = {
-			['tshirt_1'] = 58,  ['tshirt_2'] = 0,
+			['tshirt_1'] = 130,  ['tshirt_2'] = 0,
 			['torso_1'] = 55,   ['torso_2'] = 0,
-			['decals_1'] = 8,   ['decals_2'] = 3,
+			['decals_1'] = 8,   ['decals_2'] = 2,
 			['arms'] = 41,
-			['pants_1'] = 25,   ['pants_2'] = 0,
+			['pants_1'] = 31,   ['pants_2'] = 0,
 			['shoes_1'] = 25,   ['shoes_2'] = 0,
-			['helmet_1'] = -1,  ['helmet_2'] = 0,
-			['chain_1'] = 0,    ['chain_2'] = 0,
+			['chain_1'] = 125,    ['chain_2'] = 0,
 			['ears_1'] = 2,     ['ears_2'] = 0
 		},
 		female = {
-			['tshirt_1'] = 35,  ['tshirt_2'] = 0,
+			['tshirt_1'] = 152,  ['tshirt_2'] = 0,
 			['torso_1'] = 48,   ['torso_2'] = 0,
-			['decals_1'] = 7,   ['decals_2'] = 3,
+			['decals_1'] = 0,   ['decals_2'] = 0,
 			['arms'] = 44,
-			['pants_1'] = 34,   ['pants_2'] = 0,
-			['shoes_1'] = 27,   ['shoes_2'] = 0,
-			['helmet_1'] = -1,  ['helmet_2'] = 0,
-			['chain_1'] = 0,    ['chain_2'] = 0,
+			['pants_1'] = 30,   ['pants_2'] = 0,
+			['shoes_1'] = 24,   ['shoes_2'] = 0,
+			['helmet_1'] = 45,  ['helmet_2'] = 0,
+			['chain_1'] = 95,    ['chain_2'] = 0,
 			['ears_1'] = 2,     ['ears_2'] = 0
 		}
 	},
 	boss_wear = { -- currently the same as chef_wear
 		male = {
-			['tshirt_1'] = 58,  ['tshirt_2'] = 0,
+			['tshirt_1'] = 130,  ['tshirt_2'] = 0,
 			['torso_1'] = 55,   ['torso_2'] = 0,
-			['decals_1'] = 8,   ['decals_2'] = 3,
+			['decals_1'] = 8,   ['decals_2'] = 2,
 			['arms'] = 41,
-			['pants_1'] = 25,   ['pants_2'] = 0,
+			['pants_1'] = 31,   ['pants_2'] = 0,
 			['shoes_1'] = 25,   ['shoes_2'] = 0,
-			['helmet_1'] = -1,  ['helmet_2'] = 0,
-			['chain_1'] = 0,    ['chain_2'] = 0,
+			['chain_1'] = 125,    ['chain_2'] = 0,
 			['ears_1'] = 2,     ['ears_2'] = 0
 		},
 		female = {
-			['tshirt_1'] = 35,  ['tshirt_2'] = 0,
+			['tshirt_1'] = 152,  ['tshirt_2'] = 0,
 			['torso_1'] = 48,   ['torso_2'] = 0,
-			['decals_1'] = 7,   ['decals_2'] = 3,
+			['decals_1'] = 0,   ['decals_2'] = 0,
 			['arms'] = 44,
-			['pants_1'] = 34,   ['pants_2'] = 0,
-			['shoes_1'] = 27,   ['shoes_2'] = 0,
-			['helmet_1'] = -1,  ['helmet_2'] = 0,
-			['chain_1'] = 0,    ['chain_2'] = 0,
+			['pants_1'] = 30,   ['pants_2'] = 0,
+			['shoes_1'] = 24,   ['shoes_2'] = 0,
+			['helmet_1'] = 45,  ['helmet_2'] = 0,
+			['chain_1'] = 95,    ['chain_2'] = 0,
 			['ears_1'] = 2,     ['ears_2'] = 0
 		}
 	},
@@ -376,7 +508,7 @@ Config.Uniforms = {
 			['bproof_1'] = 11,  ['bproof_2'] = 1
 		},
 		female = {
-			['bproof_1'] = 13,  ['bproof_2'] = 1
+			['bproof_1'] = 27,  ['bproof_2'] = 9
 		}
 	},
 	gilet_wear = {
