@@ -96,10 +96,8 @@ var config =
     */
     music:
     [
-        "O81P0dWo6yg", "0vsnwUJjunU", "dt__Aa_9iYA",
-        "MGr-trxobzY", "FJXHpaPcq9w", "D23IHEQV13w",
-        "vz9nHvmdAb4", "eEn-nTkbEM0", "wSwewlSkIXU",
-        "30cKwNm9ThQ", "VCEsveSK5to", "lzp5c7_tdm8",
+        "z0NfI2NeDHI", "QHvtReH0Ayk", "7pzs0aGu1fU",
+        "kgvK_66Jh1w", "0msphPWfsoM", "PJGRpiHRGIU",
     ],
  
  
