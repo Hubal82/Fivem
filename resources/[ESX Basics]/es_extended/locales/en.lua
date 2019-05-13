@@ -165,7 +165,15 @@ Locales['en'] = {
   ['gadget_parachute'] = 'parachute',
   ['weapon_flare'] = 'flare gun',
   ['weapon_doubleaction'] = 'double-Action Revolver',
-
+  ['weapon_pistolmk2'] = 'Pistol MK2',
+  ['weapon_specialcarbinemk2'] = 'Special Carbine MK2',
+  ['weapon_bullpupriflemk2'] = 'Bullpup RIfle MK2',
+  ['weapon_pumpshotgunmk2'] = 'Pump Shotgun MK2',
+  ['weapon_marksmanriflemk2'] = 'MarksmanRifle MK2',
+  ['weapon_smgmk2'] = 'SMG MK2',
+  ['weapon_heavyrevolvermk2'] = 'Heavy Revolver MK2',
+  ['weapon_carbineriflemk2'] = 'Carbine Rifle MK2',
+  ['weapon_combatmgmk2'] = 'Combat MG MK2',
   -- Weapon Components
   ['component_clip_default'] = 'default Grip',
   ['component_clip_extended'] = 'extended Grip',

@@ -15,5 +15,9 @@ INSERT INTO `shops` (store, item, price) VALUES
 	('RobsLiquor','bread',30),
 	('RobsLiquor','water',15),
 	('LTDgasoline','bread',30),
-	('LTDgasoline','water',15)
+	('LTDgasoline','water',15),
+	('TwentyFourSeven', 'clip', 3000),
+	('RobsLiquor', 'clip', 3000),
+	('LTDgasoline', 'clip', 3000)
+
 ;
