@@ -63,11 +63,11 @@ Config.BlackStations = {
 			{ name = 'WEAPON_SMG_MK2',     price = 90000 },
 		},
 		Cloakrooms = {
-			{ x = 422.93, y = 4810.93, z = -60.82 },
+			{ x = 422.93, y = 4810.93, z = -59.82 },
 		},
 
 		Armories = {
-			{ x = 417.79, y = 4810.47, z = -60.82 },
+			{ x = 417.79, y = 4810.47, z = -59.82 },
 		},
 
 		Vehicles = {

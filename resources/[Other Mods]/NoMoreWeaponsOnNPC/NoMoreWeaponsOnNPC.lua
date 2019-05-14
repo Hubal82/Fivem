@@ -36,7 +36,7 @@ end
 
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(10)
+        Citizen.Wait(14)
         SetWeaponDrops()
     end
 end)
